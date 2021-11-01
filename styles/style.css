@@ -110,6 +110,11 @@ Fonts are separated by a | */
   nav  {
     list-style-type: none;
     display: flex;
+    border-radius: 8px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border-bottom-left-radius: 8px;
   }
   nav a {
     padding:1em;
