@@ -176,3 +176,30 @@ nav a:hover {
 .cont {
   grid-column: 3/4;
 }
+#home-btn{
+  float: left;
+}
+.rnav {
+  float: right;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+  line-break: strict;
+}
+.nav-btn {
+  align-items: center;
+  box-sizing: border-box;
+  display: block;
+  height: 60.0156px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 1px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 1px;
+  position: absolute;
+  cursor: pointer;
+}
