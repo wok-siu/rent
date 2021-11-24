@@ -145,12 +145,15 @@ nav a:hover {
   position: absolute;
   cursor: pointer;
 }
+
 #site-content {
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
   vertical-align: baseline;
+  grid-template-columns: 20% 100px auto;
+  display: grid;
 }
 .base {
   padding-bottom: 43px;
@@ -158,7 +161,7 @@ nav a:hover {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   overflow: hidden;
-  display: block;
+  grid-column: 1/4;
   z-index: 1;
 }
 .bkg-img {
@@ -168,12 +171,15 @@ nav a:hover {
   object-fit: cover;
   height: 100%;
   width: 75%;
+  position: relative;
+  z-index: 0;
 }
 .reg-box {
-  display: grid;
   box-sizing: border-box;
-  z-index: 2;
-  margin-top: -30vh;
+  margin-top: -70vh;
+  grid-column: 1/2;
+  position: relative;
+  z-index: 999;
 }
 .reg {
   padding: 32px;
