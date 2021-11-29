@@ -83,11 +83,12 @@ header-right {
   grid-column: 1/2;
   grid-template-rows: auto auto;
   display: grid;
-  position: absolute;
+  position: relative;
   z-index: 3;
   background-color: white;
   margin-top: 1em;
   margin-bottom: 1em;
+  height: 192px;
 }
 .info1 {
   grid-row: 1/2;
@@ -129,6 +130,9 @@ button {
   height: 100%;
   border-radius: 8px;
 }
+.space {
+  filter: brightness(0) invert(1);
+}
 #feedback {
   padding: 1em;
   font-size: 1.5em;
@@ -136,7 +140,7 @@ button {
   display: none;
   color: var(--headline-color-on-white);
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 700px){
   header a {
     float: none;
     display: block;
@@ -162,6 +166,9 @@ button {
   .collage img {
     border-radius: 4px;
     box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+  }
+  .space {
+    display: none;
   }
 }
 
