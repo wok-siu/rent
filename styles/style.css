@@ -62,8 +62,8 @@ header-right {
   border-radius: 4px;
   margin-left: 1em;
   margin-right: 1em;
-  position: absolute;
   background-repeat: no-repeat;
+  margin-bottom: 1em;
 }
 .bkg-img {
   width: 100%;
