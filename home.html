@@ -8,15 +8,6 @@
     <title>Rent</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" href="pics/logo.gif" type="image/gif" sizes="16x16">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/demos/style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
-    <script>
-    $( function() {
-      $( "#datepicker" ).datepicker();
-    } );
-    </script>
     <script>
         // get the feedback div element so we can do something with it.
         const feedbackElement = document.getElementById('feedback');
@@ -28,7 +19,7 @@
         // stop the form from doing the default action
         e.preventDefault();
         // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
-        feedbackElement.innerHTML = 'We got your information, please proceed to pay and we will use the information provided and contact you shortly!';
+        feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'We got your message, we will get back to you as soon as possible!';
         // make the feedback element visible.
         feedbackElement.style.display = "block";
         });
@@ -60,23 +51,20 @@
             <div class="info2">
                 <form1> 
                     Sign-in Date:
-                    <input id="datepicker">
+                    <input type="date">
                 </form1>
                 <form2> 
                     Sign-out Date:
-                    <input id="datepicker">
+                    <input type="date">
                 </form2>
             </div>
-            <div>
-                <button type="submit"><strong>Submit</strong></button>
-            </div>
+            <form>
+                <button type="submit"><a href="payment.html"><strong>Submit</strong></a></button>
+            </form>
         </div>
         <img alt="Vacation rental apartments in Hong Kong" src="pics/house_front.jpeg" class="bkg-img" width="100%" height="100%">
     </div>
         <div class="collage">
-            <img src="pics/WA0001.jpg" class="space" alt="">
-            <img src="pics/WA0001.jpg" class="space" alt="">
-            <img src="pics/WA0001.jpg" class="space" alt="">
             <img src="pics/WA0000.jpg" alt="">
             <img src="pics/WA0001.jpg" alt="">
             <img src="pics/WA0002.jpg" alt="">
