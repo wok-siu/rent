@@ -56,6 +56,32 @@ header a.active {
 header-right {
   float: right;
 }
+p {
+  margin-bottom: 5px;
+  padding: 1em 3em;
+}
+main {
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+.img-fluid{
+  max-width: 90%;
+  height: 360px;
+  border-radius: 1em;
+}
+.choice {
+  grid-template-columns: fr fr fr;
+  display: grid;
+}
+
+.idaho {
+  position: relative;
+  grid-column: 1/2;
+  border-style: solid;
+  border-radius: 1em;
+  border-color: var(--accent1-color);
+}
 .reg { 
   grid-template-columns: 25% 1fr auto;
   display: grid;
